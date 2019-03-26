@@ -1,0 +1,18 @@
+Instrucciones ------------
+
+
+Inicio
+
+Nos habre un menu donde el usuario escoje que entre escenario construido o crear su propio escenario 
+
+El juego trata sobre un combate, tenemos enemigos  aviones y tanques 
+El usuario pude escoger cualquiera de los dos vehiculos ...
+El usuario puede comverse con la teclas "a" "s" "d" "w" por el  campo de batalla 
+ 
+Podemos hacer movimientos como 
+curar 
+atacar 
+Ver lista de enemigos
+
+
+

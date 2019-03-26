@@ -1,0 +1,363 @@
+inicio
+
+creamos clase  Juego 
+
+  
+    Casilla[][] tablero;
+
+   creamos clase Juego() {
+
+       Creamos Tablero
+	Llamamos  el tablero 
+}
+    
+
+ creamos clase  jugar {
+        llamamos a mensaje
+    }
+
+    creamos clase  mensaje{
+        int menu;
+
+       Escribimos "BIENVENIDO A ESTE JUEGO ";
+       Escribimos"le ofrecemos  3 escenarios ";
+        Escribimos"1   Primer escenario";
+        Escribimos"2   Segundo Escenario";
+        Escribimos"3   Tercer Escenario";
+        Escribimos"4 Crear un nuevo Escenario";
+        Escribimos"5   Salir");
+        leemos menu;
+
+        hacer {
+            cambiar (menu) {
+
+                caso 1:
+
+                    Escribimos "Este escenario cuenta cuenta con lo siguiente ");
+                    Escribimos "El color rojo   son los volcanes ");
+                    Escribimos "El color azul  es  agua ");
+                    Escribimos "El resto es camino normal ");
+
+                    llamamos a la clase pintaTablero;
+                    llamamos a la clase manejador;
+                    descanso;
+
+                caso 2:
+                     llamamos a clase iniciarTablero2;
+                     llamamos a clase manejador;
+
+                    descanso;
+
+                caso 3:
+
+                    descanso;
+
+                caso 4:
+                   llamamos a la clase crearNuevoTablero;
+                   llamamos a la clase  manejador;
+                    descanso;
+
+                caso 5:
+                    salir del programa ;
+                    descanzo;
+
+            }
+
+        } meintras  (menu == 4);
+
+    }
+
+    creamos la clase crearNuevoTablero {
+        var vehiculo = "#";
+        int posColumna = 0;
+        int posFila = 0;
+        int posFilaSiguiente, posColumSiguiente;
+       creamos nuestra matriz 
+         //creamos una variable para que se quede guardada  la posicion anterios antes de coloar alfo ai .
+        int numFilas, numColumnas;
+
+        //comenzamos  a armar nuestro escenario pregunadole al usuario el numero de cada columna y fila 
+        escribir "Ingrese el numero de filas"
+        numFilas = leer
+      escribir "Ingrese el numero de columnas";
+        numColumnas = leer
+       cramos nuestra matriz con lo introducido por el usuario 
+
+        para (int i = 0; i < numFilas; incremento) {//condicionamos nuestro for para que no se pase de lo establecido 
+            para (int j = 0; j < numColumnas; incremento) {
+                escribir El tanque es () ");
+                escribir " El avion  es  (^)");
+                escribir" Agua (-)");
+               escribir" Tierra (~)");
+              escribir"Volcanes (⌂)");
+                escribir"Ingrese la informacion en ";
+                String tipoTerreno = leer;
+                nuevo matriz terreno1 que es de tipo terreno 
+                matriz - terreno1;
+            }
+        }
+        espacio en pantalla;
+        para (int i = 0; i < numFilas; incremento) {
+            for (int j = 0; j < numColumnas; incremento ) {
+                escribir matriz de tipo terreno1 ";
+            }
+            
+        }
+        // le Indicamos al usuario en donde se encuentra para que pueda movilizarse 
+        escribir"Ud. se encuentra en 0,0";
+        int contador = 0;
+        mientras (contador == 0) {
+           escribir("Ingrese hacia donde se quiere mover";
+            String tecla = leer;
+            cambiar (tecla) {
+
+                caso "w":
+                    para  (posFila == 0) {
+                        escribir"No se puede mover hacia arriba";
+                    } de lo contario {
+                        matriz = terrenoAlmacenado;
+                        posFilaSiguiente = posFila - 1;
+                        9terrenoAlmacenado);
+                        posFila  decrementar ;
+                        escribir"Ahora esta en " ( posFila  + posColumna);
+                       hacemos un cambio de terreno por el vehiculo 
+                        hacemos el cambio de terreno ;
+                        escribimos"";
+
+                        para (int i = 0; i < numFilas; incremento) {
+                            para (int j = 0; j < numColumnas; incremento) {
+                                escribir  matriz tipo terreno ;
+                            }
+                           escribimos;
+                        }
+                    }
+                    descanso;
+                caso "s":
+                    si (posFila == numFilas - 1) {
+                        escribimos "No se puede mover hacia abajo";
+                    } de lo contrario  {
+                       la matriz creada = terrenoAlmacenado;
+                        posFilaSiguiente = posFila + 1;
+                        cambio de terreno por almacenado;
+                        posFila incrementa ;
+                        escribimos"Ahora esta en " posFila + ", " + posColumna;
+                        otro cambio de terreno por el vehiculo ;
+                        hacemos el cambio de terreno ;
+                        escribimos"";
+
+                        para (int i = 0; i < numFilas; incremento) {
+                            para (int j = 0; j < numColumnas; incremento) {
+                                escribir  matriz tipo terreno ;
+                            }
+                           escribimos;
+                    }
+                    descanso;
+                caso "a":
+                   si (poscolumna==0) {
+                        escribimos "No se puede mover hacia izquierda";
+                    } de lo contrario  {
+                       la matriz creada = terrenoAlmacenado;
+                        posFilaSiguiente = posFila - 1;
+                        cambio de terreno por almacenado;
+                        posFila incrementa ;
+                        escribimos"Ahora esta en " posFila + ", " + posColumna;
+                        otro cambio de terreno por el vehiculo ;
+                        hacemos el cambio de terreno ;
+                        escribimos"";
+
+                        para (int i = 0; i < numFilas; incremento) {
+                            para (int j = 0; j < numColumnas; incremento) {
+                                escribir  matriz tipo terreno ;
+                            }
+                           escribimos;
+                    }
+                    descanso;
+                case "d":
+                   si (poscolumna==numColumnas-1) {
+                        escribimos "No se puede mover hacia la derecha ";
+                    } de lo contrario  {
+                       la matriz creada = terrenoAlmacenado;
+                        posFilaSiguiente = posFila +1;
+                        cambio de terreno por almacenado;
+                        posFila incrementa ;
+                        escribimos"Ahora esta en " posFila + ", " + posColumna;
+                        otro cambio de terreno por el vehiculo ;
+                        hacemos el cambio de terreno ;
+                        escribimos"";
+
+                        para (int i = 0; i < numFilas; incremento) {
+                            para (int j = 0; j < numColumnas; incremento) {
+                                escribir  matriz tipo terreno ;
+                            }
+                           escribimos;
+                    }
+                    descanso;
+            }
+        }
+
+    }
+    
+
+    creamos la clase  iniciarTablero() {
+      
+
+        para (int i = 0; i < 8; incremento) {
+            para (int j = 0; j < 8; incremento) {
+
+                tablero = clase nueva   CasillaBlanca;
+                para  (i == 0 || i == 6) {
+                    tablero = nueva clase CasillaTierra;
+                }
+
+                para (i == 1 || i == 5) {
+                    tablero= nueva clase  CasillaAgua;
+                }
+                para (i == 2 || i == 4) {
+                    tablero = nueva clase CasillaNegra;
+                }
+
+            }
+
+        }
+
+    }
+    
+  
+
+    nueva clase publica  pintaTablero() {//imprimimos nuestro escenario 
+        String linea1 = "espacio largo";
+        String linea2 = "espacio largo";
+        String linea3 = "espacio largo";
+        String linea4 = "espacio largo";
+
+        para  (int i = 0; i < 7; incremento) {
+            for (int j = 0; j < 7; incremento) {
+                linea1 = linea1 + tablero;
+                linea2 += tablero;
+
+            }
+            escribimos linea1 ;
+            escribimos linea2 ;
+            escribimoslinea3 ;
+            linea1 = "espacio largo";
+            linea2 = "espacio largo";
+            linea3 = "espacio largo";
+        }
+        escribimos linea4;
+
+    }
+
+  nueva clase publica manejador {
+
+        llamamos la clase inicioJuego;
+
+    }
+      // Declaramos variables para niestro combate algunas ya inicializados con un valor respectivo 
+    String menuInicio = "0";
+    String nombreUsuario ;
+    int medicina = 15;
+    String nombreEnemigo;
+    usuario miUsuario =  usuario(nombreUsuario, 100);
+
+    creamos nuestro lista de enemigos 
+
+    clase publica inicioJuego() {
+
+        escribimos "Digite un Nombre de ususario");// le pedimos un nombre al usuario 
+        nombreUsuario = leer;
+
+        mientras (menuInicio diferente o = "e") {
+
+            escribimos"a   Tomar medicina ";
+            escribimos"b   Atacar ");
+            escribimos"c   Ver vida oponentes ";
+            escribimos"d   Ver muestra Vida";
+            escribimos"f   Agregar enemigo";
+           escribimos"e     Salir;
+            menuInicio = lee.next();
+            cambiar (menuInicio) {
+
+                caso "a":
+
+                   llamar la clase  añadirVida;
+                    break;
+
+                caso "b":
+                   escribimos"Ingrese del nombre que quiera atacar ";
+                    nombreEnemigo = leer;
+                    atacamos(nombreEnemigo);
+                   descanso;
+
+                caso "c":
+                   llamamos la clase  mostrarVidaEnemigos;
+
+                    descanso;
+
+                caso "d":
+                   escribimos"ahora tienes de vida ";
+                    descanso;
+
+                caso "e":
+                    Salir del programa;
+
+                    descanso;
+
+                caso "f":
+                    llamar a la clase agregarEnemigos;
+                    descanso;
+               
+                 
+            }
+
+        }
+
+    }
+
+    creamos clase agregarEnemigos{//agregaamos a nuestro enemigos aqui 
+        String nombreEnemigo;
+        int vidaEnemigo;
+
+        escribimos "ingrese el nombre del Enemigo ";
+        nombreEnemigo = leer;
+        escribimos "ingrese cantidad de vida inicial ";
+        vidaEnemigo = leer;
+
+        enemigo nuevoEnemigo = nuevo enemigo{
+           
+            }
+        
+        listaEnemigos ;//vamos agregandoa  nuestros enemigos en un lista 
+
+    }
+
+   clase publica añadirVida {
+        int vidaFinal;
+        vidaFinal = medicina ;//  vamos a saber cual es su vida final 
+        
+
+    }
+
+    creamos nueva clase publica atacamos(String enemigos) {// aqui solo le descontamos la vida en 10 a el enemigo si coinciden con el nombre y imprimimos la nueva vida del enemigo 
+        
+
+        para  (int i = 0; i < listaEnemigos.size(); iincremento) {
+
+            para (comparmaos en las lista si consisiden ) {
+                int nuevaVida = la cantidad de vida  - 10;
+                nuevaVida 
+            } else {
+
+            }
+        }
+
+    }
+
+    nueva clase  mostrarVidaEnemigos() {
+        para (int i = 0; i < listaEnemigos; incremento ) {
+           escribir "el enemigo" "tiene vida " );
+
+        }
+
+    }
+
+}
